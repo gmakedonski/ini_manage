@@ -26,7 +26,7 @@ void main()
 #endif
 	ini_start("sample.ini");
 	//save_as("test.ini");
-	buffer = get_value("Main","PLC");
+	buffer = ini_get_value("Main","PLC");
 	printf("value : %s\n",buffer);
 	printf("last error is %s\n",get_last_error());
 	//print_content();	
